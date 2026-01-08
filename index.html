@@ -67,14 +67,22 @@
                     </select>
                 </div>
                 <button type="submit" class="w-full py-5 b-coin-gradient text-white font-bold rounded-xl shadow-lg">Solicitar Acesso Antecipado</button>
-            </form>
-            <p class="text-center text-xs text-slate-400 mt-6 italic">Apenas 10 vagas para a região de São Paulo.</p>
-        </div>
-    </section>
-
-    <footer class="py-10 text-center text-slate-400 text-xs uppercase tracking-widest">
-        &copy; 2026 B2B-Swap Operações Alpha - São Paulo, SP.
-    </footer>
-
-</body>
-</html>
+           <form action="https://formspree.io/f/xkogdave" method="POST" class="space-y-6">
+    <div>
+        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Seu Nome / Cargo</label>
+        <input type="text" name="nome_cargo" required placeholder="Ex: João Silva | CEO" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+    <div>
+        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">O que sua empresa oferece?</label>
+        <select name="tipo_oferta" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="intelectual">Serviços Intelectuais (Contabilidade, TI, etc)</option>
+            <option value="insumos">Insumos Físicos (Café, Limpeza, etc)</option>
+            <option value="outros">Outros</option>
+        </select>
+    </div>
+    <div>
+        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">WhatsApp de Contato</label>
+        <input type="tel" name="whatsapp" required placeholder="(11) 99999-9999" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+    <button type="submit" class="w-full py-5 b-coin-gradient text-white font-bold rounded-xl shadow-lg hover:opacity-90 transition-opacity">Solicitar Acesso Antecipado</button>
+</form>
